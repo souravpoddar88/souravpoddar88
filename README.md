@@ -155,3 +155,15 @@ Lovely Professional University, Punjab &nbsp;|&nbsp; Since Aug 2023 &nbsp;|&nbsp
 *"Write code that solves real problems. Build → Break → Improve → Repeat."*
 
 </div>
+
+
+---
+
+### 🎮 Pac-Man eats my contributions!
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/souravpoddar88/souravpoddar88/output/github-contribution-grid-pacman-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/souravpoddar88/souravpoddar88/output/github-contribution-grid-pacman.svg" />
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/souravpoddar88/souravpoddar88/output/github-contribution-grid-pacman.svg" />
+</picture>
+
