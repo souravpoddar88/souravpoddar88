@@ -1,10 +1,28 @@
+name: Generate Pacman
 
----
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
 
-### 🎮 Pac-Man eats my contributions!
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/souravpoddar88/souravpoddar88/output/github-contribution-grid-pacman-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/souravpoddar88/souravpoddar88/output/github-contribution-grid-pacman.svg" />
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/souravpoddar88/souravpoddar88/output/github-contribution-grid-pacman.svg" />
-</picture>
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: souravpoddar88
+          outputs: |
+            dist/github-contribution-grid-pacman.svg:flavor=pacman
+            dist/github-contribution-grid-pacman-dark.svg:flavor=pacman&color_snake=#FFD700&color_dots=#1a1a2e,#16213e,#0f3460,#533483,#7209b7
+
+      - uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
