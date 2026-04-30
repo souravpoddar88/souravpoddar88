@@ -158,11 +158,8 @@ Lovely Professional University, Punjab &nbsp;|&nbsp; Since Aug 2023 &nbsp;|&nbsp
 
 
 ---
-![Pacman](https://raw.githubusercontent.com/souravpoddar88/souravpoddar88/output/pacman.svg)
-### 🎮 Pac-Man eats my contributions!
+## 🟡 Pacman Contribution Game
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/souravpoddar88/souravpoddar88/output/github-contribution-grid-pacman-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/souravpoddar88/souravpoddar88/output/github-contribution-grid-pacman.svg" />
-  <img alt="pacman" src="https://raw.githubusercontent.com/souravpoddar88/souravpoddar88/output/github-contribution-grid-pacman.svg" />
-</picture>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/souravpoddar88/souravpoddar88/output/pacman.svg">
+</p>
