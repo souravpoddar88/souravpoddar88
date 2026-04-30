@@ -10,7 +10,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Sourav%20Kumar-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/souravkumar23)
 [![GitHub](https://img.shields.io/badge/GitHub-souravpoddar88-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/souravpoddar88)
-[![Gmail](https://img.shields.io/badge/Gmail-Souravkumar23%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:Souravkumar23@gmail.com)
+[![Gmail](https://img.shields.io/badge/Gmail-Souravkumarkumar2323%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:Souravkumar23@gmail.com)
 [![LeetCode](https://img.shields.io/badge/LeetCode-250%2B%20Solved-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=souravpoddar88&style=flat-square&color=2E86C1&label=Profile+Views)
@@ -158,6 +158,6 @@ Lovely Professional University, Punjab &nbsp;|&nbsp; Since Aug 2023 &nbsp;|&nbsp
 
 
 ---
-## 🟡 Pacman Contribution Game
+## 🟡 snake Contribution Game
 
 ![Pacman](https://raw.githubusercontent.com/souravpoddar88/souravpoddar88/output/github-contribution-grid-pacman.svg)
