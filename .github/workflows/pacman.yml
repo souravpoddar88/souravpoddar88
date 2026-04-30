@@ -14,12 +14,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: Platane/snk/svg-only@v3
+      - name: Generate Pacman SVG
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: souravpoddar88
-          outputs: dist/github-contribution-grid-pacman.svg:flavor=pacman
+          outputs: |
+            dist/github-contribution-grid-pacman.svg:flavor=pacman
 
-      - uses: JamesIves/github-pages-deploy-action@v4
+      - name: Check dist contents
+        run: |
+          echo "=== Root files ==="
+          ls -la
+          echo "=== Dist files ==="
+          ls -la dist/ 2>/dev/null || echo "NO DIST FOLDER"
+          echo "=== Find SVGs ==="
+          find . -name "*.svg" 2>/dev/null
+
+      - name: Push to output branch
+        if: success()
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: output
           folder: dist
