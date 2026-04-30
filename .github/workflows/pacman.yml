@@ -14,27 +14,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate Pacman SVG
-        uses: Platane/snk/svg-only@v3
-        id: snake_gif
+      - uses: Platane/snk/svg-only@v3
         with:
           github_user_name: souravpoddar88
-          outputs: |
-            github-contribution-grid-pacman.svg:flavor=pacman
-            github-contribution-grid-pacman-dark.svg:flavor=pacman&color_snake=#FFD700&color_dots=#161b22,#0d4429,#006d32,#26a641,#39d353
+          outputs: dist/github-contribution-grid-pacman.svg:flavor=pacman
 
-      - name: Push SVG to output branch
-        run: |
-          mkdir -p dist
-          cp github-contribution-grid-pacman.svg dist/ 2>/dev/null || true
-          cp github-contribution-grid-pacman-dark.svg dist/ 2>/dev/null || true
-          ls -la
-          ls -la dist
-          cd dist
-          git init
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -b output
-          git add -A
-          git commit -m "Update pacman SVG"
-          git push --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/souravpoddar88/souravpoddar88.git" output
+      - uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: output
+          folder: dist
+          token: ${{ secrets.GITHUB_TOKEN }}
+          clean: false
