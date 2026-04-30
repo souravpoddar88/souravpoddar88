@@ -160,6 +160,4 @@ Lovely Professional University, Punjab &nbsp;|&nbsp; Since Aug 2023 &nbsp;|&nbsp
 ---
 ## 🟡 Pacman Contribution Game
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/souravpoddar88/souravpoddar88/output/pacman.svg">
-</p>
+![Pacman](https://raw.githubusercontent.com/souravpoddar88/souravpoddar88/output/github-contribution-grid-pacman.svg)
