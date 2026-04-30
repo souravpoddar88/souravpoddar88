@@ -31,7 +31,7 @@ I'm a B.Tech Computer Science student at Lovely Professional University, passion
 
 ---
 <p align="center">
-  <img src="[https://staticg.sportskeeda.com/editor/2023/11/eren-yeager.jpg](https://www.dualshockers.com/attack-on-titan-eren-age/)" width="300">
+  <img src="eren-yeager-attack-on-titan-age-height-and-birthday-of-all-characters.avif" width="300">
 </p>  
 
 ## Skills
