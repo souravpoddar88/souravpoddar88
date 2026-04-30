@@ -8,22 +8,33 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     permissions:
       contents: write
 
     steps:
-      - uses: actions/checkout@v4
+      # Step 1: Repo checkout
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Generate Pacman
-        uses: Platane/snk@v3
+      # Step 2: Generate Pacman SVG
+      - name: Generate Pacman contribution graph
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: souravpoddar88
-          outputs: |
-            dist/pacman.svg?palette=github-dark&flavor=pacman
+          outputs: dist/github-contribution-grid-pacman.svg?flavor=pacman
 
-      - name: Deploy
+      # Step 3: Check output (debug)
+      - name: Verify generated files
+        run: |
+          echo "Checking dist folder..."
+          ls -la dist/
+
+      # Step 4: Deploy to output branch
+      - name: Deploy to output branch
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: output
           folder: dist
           token: ${{ secrets.GITHUB_TOKEN }}
+          clean: true
