@@ -30,9 +30,9 @@ I'm a B.Tech Computer Science student at Lovely Professional University, passion
 - 📫 Reach me at **Souravkumar23@gmail.com**
 
 ---
-<img align="right" alt="Eren Yeager" width="300" src="https://staticg.sportskeeda.com/editor/2023/11/eren-yeager.jpg"/>
-
-### ⚔️ "Keep moving forward..."  
+<p align="center">
+  <img src="https://staticg.sportskeeda.com/editor/2023/11/eren-yeager.jpg" width="300">
+</p>  
 
 ## Skills
 
